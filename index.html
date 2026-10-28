@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>趙妮綺作品集｜非官方粉絲站</title>
+<meta name="description" content="趙妮綺非官方粉絲站：整理她的作品、訪談與近況。">
+<meta property="og:title" content="趙妮綺作品集｜非官方粉絲站">
+<meta property="og:description" content="整理演員趙妮綺的作品、訪談與近況。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 30'%3E%3Cg fill='%23e0577f'%3E%3Cellipse cx='9' cy='8' rx='3.6' ry='8' transform='rotate(-12 9 8)'/%3E%3Cellipse cx='19' cy='8' rx='3.6' ry='8' transform='rotate(12 19 8)'/%3E%3Ccircle cx='14' cy='20' r='9.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700&family=Fredoka:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="bun" aria-hidden="true"></span>趙妮綺</a>
+    <span class="fanchip">非官方粉絲站</span>
+    <nav class="links">
+      <a href="#works">作品</a><a href="#press">訪談報導</a><a href="#news">近況</a><a href="#about">關於</a>
+      <button class="btn small" id="adminToggle" hidden>管理模式</button>
+    </nav>
+  </div>
+</header>
+<div class="adminbar admin-only" id="adminbar">
+  <div class="wrap">
+    <strong>管理模式</strong><span>點各區塊的「新增」或項目旁的「編輯」更新內容，儲存後重新整理頁面就會看到。</span>
+    <button class="btn small" id="editProfile">編輯個人資料</button>
+    <button class="btn small" id="logout">登出</button>
+  </div>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="pframe">
+        <svg class="ears" viewBox="0 0 160 80" aria-hidden="true"><g><ellipse class="outer" cx="48" cy="44" rx="20" ry="40" transform="rotate(-14 48 44)"/><ellipse class="inner" cx="48" cy="46" rx="9" ry="28" transform="rotate(-14 48 46)"/><ellipse class="outer" cx="112" cy="44" rx="20" ry="40" transform="rotate(14 112 44)"/><ellipse class="inner" cx="112" cy="46" rx="9" ry="28" transform="rotate(14 112 46)"/></g></svg>
+        <div class="portrait" id="portrait"><span class="mono">妮</span><div class="reel"><span>♡ FAN ARCHIVE ♡</span></div></div>
+      </div>
+      <div>
+        <div class="eyebrow"><span class="bun" aria-hidden="true"></span>Actress · Taipei</div>
+        <h1 id="pName">趙妮綺</h1>
+        <p class="latin" id="pLatin" hidden></p>
+        <p class="tagline" id="pTag">台灣新生代演員。這裡整理她的作品、訪談與近況。</p>
+        <div class="facts" id="pFacts"></div>
+        <a class="ig" id="pIg" href="https://www.instagram.com/tanya_o_c/" target="_blank" rel="noopener">Instagram @tanya_o_c ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="sec-head"><h2>關於</h2><span class="en">About</span></div>
+      <p class="bio" id="pBio">資料載入中…</p>
+    </div>
+  </section>
+
+  <section class="block" id="works">
+    <div class="wrap">
+      <div class="sec-head"><h2>作品</h2><span class="en">Filmography</span><span class="count" id="cWorks"></span>
+        <button class="btn small add admin-only" data-add="works">＋ 新增作品</button></div>
+      <ul class="film" id="lWorks"></ul>
+    </div>
+  </section>
+
+  <section class="block" id="press">
+    <div class="wrap">
+      <div class="sec-head"><h2>訪談與報導</h2><span class="en">Press</span><span class="count" id="cPress"></span>
+        <button class="btn small add admin-only" data-add="interviews">＋ 新增訪談</button></div>
+      <div class="press" id="lPress"></div>
+    </div>
+  </section>
+
+  <section class="block" id="news">
+    <div class="wrap">
+      <div class="sec-head"><h2>近況</h2><span class="en">Updates</span>
+        <button class="btn small add admin-only" data-add="news">＋ 新增近況</button></div>
+      <ul class="news" id="lNews"></ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="hop" viewBox="0 0 120 44" aria-hidden="true"><path d="M2 40 Q30 36 60 40 T118 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6"/><g class="b" fill="currentColor"><ellipse cx="56" cy="10" rx="3.2" ry="8" transform="rotate(-18 56 10)"/><ellipse cx="63" cy="10" rx="3.2" ry="8" transform="rotate(10 63 10)"/><circle cx="60" cy="22" r="7"/><ellipse cx="66" cy="31" rx="11" ry="8"/><circle cx="77" cy="31" r="3"/></g></svg>
+    <span>本站為粉絲自製的非官方網站，與趙妮綺本人及其經紀公司無關。</span>
+    <span>內容整理自公開報導與社群，訪談請點連結閱讀原文。如有錯誤或需移除的內容，歡迎聯繫站務。</span>
+    <a href="#admin" class="adminlink" id="adminLink">管理員登入</a>
+  </div>
+</footer>
+
+<div id="sheetRoot"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
