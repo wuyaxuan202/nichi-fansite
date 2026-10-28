@@ -40,6 +40,8 @@
       { k: "bio", label: "簡介", type: "textarea" },
       { k: "agency", label: "經紀公司" },
       { k: "instagram", label: "Instagram 帳號（不含 @）" },
+      { k: "fanclub_name", label: "粉絲後援會名稱", ph: "好運趙喚站" },
+      { k: "fanclub_ig", label: "後援會 Instagram 帳號（不含 @）", ph: "luckytz_tw" },
       { k: "photo", label: "形象照", type: "image" }
     ]}
   };
@@ -75,7 +77,12 @@
     if (p.agency) facts.append(el("span", { class: "fact" }, el("b", { text: "經紀" }), p.agency));
     if (state.works.length) facts.append(el("span", { class: "fact" }, el("b", { text: "作品" }), state.works.length + " 部"));
     const ig = (p.instagram || "tanya_o_c").replace(/^@/, "").replace(/[^A-Za-z0-9._]/g, "");
-    const a = $("#pIg"); a.href = "https://www.instagram.com/" + ig + "/"; a.textContent = "Instagram @" + ig + " ↗";
+    const a = $("#pIg"); a.href = "https://www.instagram.com/" + ig + "/"; a.textContent = "本人 IG @" + ig + " ↗";
+    const fig = (p.fanclub_ig || "").replace(/^@/, "").replace(/[^A-Za-z0-9._]/g, "");
+    const fc = $("#pFan");
+    fc.hidden = !fig;
+    $("#pFanNote").hidden = !fig;
+    if (fig) { fc.href = "https://www.instagram.com/" + fig + "/"; fc.textContent = (p.fanclub_name || "粉絲後援會") + " IG @" + fig + " ↗"; }
     const por = $("#portrait"), src = safeUrl(p.photo);
     const old = por.querySelector("img"); if (old) old.remove();
     por.querySelector(".mono").hidden = !!src;
