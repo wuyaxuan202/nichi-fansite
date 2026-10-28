@@ -141,3 +141,7 @@ where not exists (select 1 from public.news);
 
 -- ===== 最後一步：把你的管理員 Email 加進名單（改成你自己的）=====
 -- insert into public.admins (email) values ('你的email@example.com');
+
+-- ===== 後援會連結（2026-10 新增）=====
+alter table public.profile add column if not exists fanclub_name text;
+alter table public.profile add column if not exists fanclub_ig text;
